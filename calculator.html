@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+		<form name="cal" class="whole">
+
+			<div class="">
+				<input type="text" class="well well-sm" name="res"><br>
+			    <input type="button" class="clr btn btn-danger" value="Clear" onclick="cal.res.value =''">
+			    <input type="button" class="eq btn btn-success" value="Result" onclick="cal.res.value = eval(cal.res.value)">
+			</div>
+
+			<div class="dig">
+		        <input type="button" class="btn btn-default btn-md" value="7" onclick="Digits('7')">
+		        <input type="button" class="btn btn-default btn-md" value="8" onclick="Digits('8')">
+		        <input type="button" class="btn btn-default btn-md" value="9" onclick="Digits('9')">
+		        <input type="button" class="btn btn-default btn-md" value="/" onclick="Digits('/')">
+		        <br><br>
+		        <input type="button" class="btn btn-default btn-md" value="4" onclick="Digits('4')">
+		        <input type="button" class="btn btn-default btn-md" value="5" onclick="Digits('5')">
+		        <input type="button" class="btn btn-default btn-md" value="6" onclick="Digits('6')">
+		        <input type="button" class="btn btn-default btn-md" value="*" onclick="Digits('*')">
+		        <br><br>
+		        <input type="button" class="btn btn-default btn-md" value="1" onclick="Digits('1')">
+		        <input type="button" class="btn btn-default btn-md" value="2" onclick="Digits('2')">
+		        <input type="button" class="btn btn-default btn-md" value="3" onclick="Digits('3')">
+		        <input type="button" class="btn btn-default btn-md" value="-" onclick="Digits('-')">
+		        <br><br>
+		        <input type="button" class="btn btn-default btn-md" class="btn btn-default btn-sm" value="." onclick="Digits('.')">
+		        <input type="button" class="btn btn-default btn-md" value="0" onclick="Digits('0')">
+		        <input type="button" class="btn btn-default btn-md" value="%" onclick="Digits('%')">
+		        <input type="button" class="btn btn-default btn-md" value="+" onclick="Digits('+')">
+	        </div>
+
+		</form>
+	</div>
+</div>
+	
+	<script type="text/javascript">
+		function Digits(dig){
+			document.cal.res.value += dig;
+		}
+	</script>
+
+</body>
+</html>

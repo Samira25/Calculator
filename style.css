@@ -1,0 +1,30 @@
+.dig{
+	display: block;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+.clr{
+	margin-left: 10px;
+	margin-top: -10px;
+}
+
+.eq{
+	margin-left: 10px;
+	margin-top: -10px;
+}
+.whole{
+	background-color: #00FFFF;
+	max-width: 400px;
+	max-height: 400px;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-left: 10%;
+	margin-left: 20%;
+	margin-top: 3%;
+	margin-right: 10%;
+}
+
+.btn-default{
+	color: #00008B;
+}
